@@ -17,7 +17,7 @@ function App() {
       </h5>
         <Navigation />
         <Switch>
-          <Route path="/" component={Home} exact />
+          <Route path="/ntyFrontAppReact" component={Home}  />
           <Route path="/employee" component={Department} />
         </Switch>
       </div>
