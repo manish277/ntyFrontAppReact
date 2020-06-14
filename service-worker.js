@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ntyFrontAppReact/precache-manifest.545a8961ee1ea84844729215ac75dd9f.js"
+  "/ntyFrontAppReact/precache-manifest.d8bbefdc25528689610c6576f29f609b.js"
 );
 
 self.addEventListener('message', (event) => {

@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7a0830ee1565125f61621db7cd1ab4e8",
+    "revision": "2656fd5e8aa0716addb1f8e576e8ec85",
     "url": "/ntyFrontAppReact/index.html"
   },
   {
-    "revision": "fefcee4226e011822596",
+    "revision": "ce168682185f4ef93a5b",
     "url": "/ntyFrontAppReact/static/css/main.5f361e03.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ntyFrontAppReact/static/js/2.e1510de9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fefcee4226e011822596",
-    "url": "/ntyFrontAppReact/static/js/main.59a6efcf.chunk.js"
+    "revision": "ce168682185f4ef93a5b",
+    "url": "/ntyFrontAppReact/static/js/main.04d6657c.chunk.js"
   },
   {
     "revision": "c02e8cd57c64b01e622c",

@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ntyFrontAppReact/static/css/main.5f361e03.chunk.css",
-    "main.js": "/ntyFrontAppReact/static/js/main.59a6efcf.chunk.js",
-    "main.js.map": "/ntyFrontAppReact/static/js/main.59a6efcf.chunk.js.map",
+    "main.js": "/ntyFrontAppReact/static/js/main.04d6657c.chunk.js",
+    "main.js.map": "/ntyFrontAppReact/static/js/main.04d6657c.chunk.js.map",
     "runtime-main.js": "/ntyFrontAppReact/static/js/runtime-main.f0d42c12.js",
     "runtime-main.js.map": "/ntyFrontAppReact/static/js/runtime-main.f0d42c12.js.map",
     "static/js/2.e1510de9.chunk.js": "/ntyFrontAppReact/static/js/2.e1510de9.chunk.js",
     "static/js/2.e1510de9.chunk.js.map": "/ntyFrontAppReact/static/js/2.e1510de9.chunk.js.map",
     "index.html": "/ntyFrontAppReact/index.html",
-    "precache-manifest.545a8961ee1ea84844729215ac75dd9f.js": "/ntyFrontAppReact/precache-manifest.545a8961ee1ea84844729215ac75dd9f.js",
+    "precache-manifest.d8bbefdc25528689610c6576f29f609b.js": "/ntyFrontAppReact/precache-manifest.d8bbefdc25528689610c6576f29f609b.js",
     "service-worker.js": "/ntyFrontAppReact/service-worker.js",
     "static/css/main.5f361e03.chunk.css.map": "/ntyFrontAppReact/static/css/main.5f361e03.chunk.css.map",
     "static/js/2.e1510de9.chunk.js.LICENSE.txt": "/ntyFrontAppReact/static/js/2.e1510de9.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.f0d42c12.js",
     "static/js/2.e1510de9.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.59a6efcf.chunk.js"
+    "static/js/main.04d6657c.chunk.js"
   ]
 }
