@@ -2,7 +2,7 @@
   "name": "ntycrudfrontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://manish277.github.io/ntyFrontAppReact",
+  "homepage": "http://manish277.github.io/ntyFrontAppReact/",
   "dependencies": {
     "@material-ui/core": "^4.10.2",
     "@testing-library/jest-dom": "^4.2.4",
