@@ -7,6 +7,9 @@ export class Home extends Component {
             <h3>
             Welcome to Nitya software.
             This is CRUD apllication assignment for software Developent.
+            Back End is created on Node js
+            Database is MongoDB
+            back end is diployed on HEROKU
             </h3>
             </div>
         )
