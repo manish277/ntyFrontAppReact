@@ -6,7 +6,7 @@ export class EditDeptModal extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            snackBarOpen: false, snackBarMsg: ''
+            deps: ['HR', 'Designer', 'Developer', 'Sales'],gender:['male','female','other'],snackBarOpen: false, snackBarMsg: ''
         };
         this.handleSubmit = this.handleSubmit.bind(this)
     }
@@ -99,6 +99,7 @@ export class EditDeptModal extends Component {
                                     </Form.Group>
                                     <Form.Group controlId='DepartmentDOB'>
                                         <Form.Label>Date of Birth</Form.Label>
+                                        
                                         <Form.Control
                                             type="date"
                                             name="dateOfBirth"
@@ -111,26 +112,20 @@ export class EditDeptModal extends Component {
 
                                     <Form.Group controlId='DepartmentGender'>
                                         <Form.Label>Gender</Form.Label>
-                                        <Form.Control
-                                            type="text"
-                                            name="sex"
-                                            required
-                                            defaultValue={this.props.gender}
-
-                                            placeholder="Gender"
-                                        />
+                                        <Form.Control as="select"  defaultValue={this.props.gender}>
+                                        {this.state.gender.map(gender=>
+                                            <option key={gender}>{gender}</option>
+                                            )}
+                                    </Form.Control>
                                     </Form.Group>
                                    
                                     <Form.Group controlId='Department'>
                                     <Form.Label>Department</Form.Label>
-                                    <Form.Control
-                                        type="text"
-                                        name="department"
-                                        required
-                                        defaultValue={this.props.dep}
-
-                                        placeholder="Gender"
-                                    />
+                                    <Form.Control as="select" defaultValue={this.props.dep} >
+                                    {this.state.deps.map(dep=>
+                                        <option key={dep}>{dep}</option>
+                                        )}
+                                </Form.Control>
                                 </Form.Group>
 
                                     <Form.Group controlId='DepartmentSalary'>
@@ -151,7 +146,7 @@ export class EditDeptModal extends Component {
                                             type="file"
                                             name="resume"
                                             required
-                                            defaultValue={this.props.file}
+                                            defaultValue={this.props.res}
                                             placeholder="Resume"
                                         />
                                     </Form.Group>

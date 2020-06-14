@@ -39,7 +39,7 @@ export class Department extends Component {
     }
 
     deleteDepartment(deptId) {
-        console.log("deptId",deptId);
+        console.log("deptId", deptId);
         if (window.confirm('Are you sure?')) {
             fetch(`https://ntycrudapp.herokuapp.com/delete?_id=${deptId}`, {
                 method: 'DELETE',
@@ -53,12 +53,12 @@ export class Department extends Component {
     }
     render() {
 
-        const { dept, id, name,dob,gender,dep, sal,file} = this.state;
+        const { dept, id, name, dob, gender, dep, sal, res } = this.state;
         let addModalClose = () => this.setState({ addModalShow: false })
         let editModalClose = () => this.setState({ editModalShow: false })
         return (
 
-           
+
             <div>
                 <Table className='mt-4' striped bordered hover size='sm'>
                     <thead>
@@ -82,9 +82,18 @@ export class Department extends Component {
                                 <td>{dep.salary}</td>
                                 <td>{dep.resume}</td>
                                 <td><ButtonToolbar>
-                                    <Button className="mr-2" variant='info' onClick={() => this.setState({ editModalShow: true, })}>Edit
+                                    <Button className="mr-2" variant='info' onClick={() => this.setState({
+                                        editModalShow: true,
+                                        id: dep._id,
+                                        name: dep.name,
+                                        dob: dep.dateOfBirth,
+                                        gender: dep.sex,
+                                        dep: dep.department,
+                                        sal: dep.salary,
+                                        
+                                    })}>Edit
                                 </Button>
-                                <Button className="mr-2" variant='danger' onClick={() => this.deleteDepartment(dep._id)}>Delete
+                                    <Button className="mr-2" variant='danger' onClick={() => this.deleteDepartment(dep._id)}>Delete
                                 </Button>
                                     <EditDeptModal show={this.state.editModalShow}
                                         onHide={editModalClose}
@@ -93,7 +102,7 @@ export class Department extends Component {
                                         dob={dep.dateOfBirth}
                                         gender={dep.sex}
                                         dep={dep.department}
-                                       sal={dep.salary}
+                                        sal={dep.salary}
                                     />
                                 </ButtonToolbar></td>
                             </tr>
