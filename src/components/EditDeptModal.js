@@ -105,7 +105,7 @@ export class EditDeptModal extends Component {
                                             name="dateOfBirth"
                                             required
                                             defaultValue={this.props.dob}
-
+                                                
                                             placeholder="Date of Birth"
                                         />
                                     </Form.Group>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Button, ButtonToolbar } from 'react-bootstrap';
-
+import moment from "moment";
 import { AddDeptModal } from './AddDeptModal';
 import { EditDeptModal } from './EditDeptModal'
 import { Table } from 'react-bootstrap'
@@ -69,6 +69,7 @@ export class Department extends Component {
                             <th>Department</th>
                             <th>Salary</th>
                             <th>Resume</th>
+                            <th>Created At</th>
                             <th>Options</th>
                         </tr>
                     </thead>
@@ -76,17 +77,19 @@ export class Department extends Component {
                         {dept.map((dep) =>
                             <tr key={dep._id}>
                                 <td>{dep.name}</td>
-                                <td>{dep.dateOfBirth}</td>
+                                <td>{(new Date(dep.dateOfBirth )).toLocaleDateString().toString() }</td>
                                 <td>{dep.sex}</td>
                                 <td>{dep.department}</td>
                                 <td>{dep.salary}</td>
                                 <td>{dep.resume}</td>
+                                <td>{ moment(dep.createdAt).fromNow()}</td>
+                               
                                 <td><ButtonToolbar>
                                     <Button className="mr-2" variant='info' onClick={() => this.setState({
                                         editModalShow: true,
                                         id: dep._id,
                                         name: dep.name,
-                                        dob: dep.dateOfBirth,
+                                        dob: (new Date(dep.dateOfBirth )).toLocaleDateString().toString() ,
                                         gender: dep.sex,
                                         dep: dep.department,
                                         sal: dep.salary,
@@ -99,7 +102,7 @@ export class Department extends Component {
                                         onHide={editModalClose}
                                         id={dep._id}
                                         name={dep.name}
-                                        dob={dep.dateOfBirth}
+                                        dob={(new Date(dep.dateOfBirth )).toLocaleDateString().toString() }
                                         gender={dep.sex}
                                         dep={dep.department}
                                         sal={dep.salary}
